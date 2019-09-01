@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 资讯界面Item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dip"
+    android:background="@drawable/lv_item_sel_color"
+    android:paddingBottom="@dimen/centerLvItemHeightPB" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/begin_time"
+        android:layout_alignRight="@+id/tvExcept"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="dd"
+        android:textColor="@color/colume"
+        android:textSize="16sp" />
+
+    <!-- 80 -->
+
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvTitle"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitXY" />
+
+    <!-- 52dip 60dip -->
+
+    <ImageView
+        android:id="@+id/begin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/ivRight"
+        android:src="@drawable/ic_activities_time_check" />
+
+    <TextView
+        android:id="@+id/tvExcept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/begin_time"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="测试数据测试数"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/begin_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/begin_time"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/ivRight"
+        android:src="@drawable/ic_activities_place_check" />
+
+    <TextView
+        android:id="@+id/tvplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvExcept"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/begin_place"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="测试数据测试数"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <!-- 20dip -->
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/centerLvItemLlHeight"
+        android:layout_below="@+id/tvplace"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/ivRight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="3dip"
+                android:text="浏览"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="100dip"
+                android:text="时间"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:text="评论"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="100dip"
+                android:text="时间"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="100dip"
+                android:text="时间"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="3dip"
+                android:text="参与人数"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvHasJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="100dip"
+                android:text="时间"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:text="时间"
+        android:textColor="#555555"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/img_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_report_pass" />
+
+</RelativeLayout>

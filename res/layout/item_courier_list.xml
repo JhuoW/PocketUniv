@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/centerLvItemHeight"
+    android:background="@drawable/lv_item_sel_color"
+    android:paddingBottom="@dimen/centerLvItemHeightPB" >
+
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="@dimen/centerLvItemIvWidthHeight"
+        android:layout_height="@dimen/centerLvItemIvWidthHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_error" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ivRight"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="顺丰快递"
+        android:textColor="@color/orange"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvTitle"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/ivRight" >
+
+        <ImageView
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_plugin_contacts" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/dd"
+            android:text="8888888"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ll_phone"
+        android:layout_below="@id/ll_phone"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/ivRight" >
+
+        <ImageView
+            android:id="@+id/tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_report_remark" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/tt"
+            android:text="www.baidu.com"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+</RelativeLayout>

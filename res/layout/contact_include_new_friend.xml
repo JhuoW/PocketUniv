@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <LinearLayout
+        android:id="@+id/layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frame_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/action_settings"
+                android:padding="5dp"
+                android:src="@drawable/default_fmessage" />
+
+            <ImageView
+                android:id="@+id/iv_msg_tips"
+                android:layout_width="@dimen/tip_icon_size"
+                android:layout_height="@dimen/tip_icon_size"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/msg_tips"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="好友申请"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_below="@id/layout_new"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/frame_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/default_servicebrand_contact" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="通讯录"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_below="@id/layout_contact"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frame_group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/default_chatroom" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="群聊"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

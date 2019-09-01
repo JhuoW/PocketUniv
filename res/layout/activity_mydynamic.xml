@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/friend_circle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <com.pocketuniversity.ui.xlist.XListView
+        android:id="@+id/friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#ebebeb"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+</LinearLayout>

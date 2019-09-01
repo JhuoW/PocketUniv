@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_found_item"
+        android:id="@+id/stateId" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="丢失一张银行卡"
+        android:layout_toRightOf="@id/stateId"
+        android:layout_marginTop="15dip"
+        android:textSize="14sp" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-08-18 06:42:00"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/stateId"
+        android:textColor="#7D7D7D"
+        android:layout_marginTop="6dip"
+        android:id="@+id/time"/>
+    
+    <ImageView 
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/time"
+        android:layout_alignLeft="@id/time"
+        android:layout_marginTop="6dip"
+        android:src="@drawable/ic_default_quadrate"
+        android:id="@+id/img_lost"
+        android:layout_marginBottom="3dip"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dip"
+        android:layout_marginTop="8dip"
+        android:text="可能感兴趣的人"
+        android:textColor="@color/gray_font"
+        android:textSize="13sp" />
+    
+    <ListView
+        android:id="@+id/hotGroup_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/changeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:text="换一批" />
+
+</LinearLayout>

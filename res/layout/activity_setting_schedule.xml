@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff3fb" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_header_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="5.0" >
+
+            <EditText
+                android:id="@+id/et_Classname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:background="@null"
+                android:hint="输入课程名称"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/FromClassNum"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="5.0" >
+
+            <TextView
+                android:id="@+id/tv_FromClassNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="选择从第几节课开始"
+                android:inputType="number"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_bg"
+            android:id="@+id/ll_classNumLen"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="5.0" >
+
+            <TextView
+                android:id="@+id/tv_ClassNumLen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="输入课程节数"
+                android:inputType="number"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="5.0" >
+
+            <EditText
+                android:id="@+id/et_ClassRoom"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:background="@null"
+                android:hint="输入该课程上课地点"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:id="@+id/ll_weekday"
+            android:shadowRadius="5.0" >
+
+            <TextView
+                android:id="@+id/tv_Weekday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="选择该课程上课时间"
+                android:inputType="number"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="5.0"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sendSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg_selector"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</RelativeLayout>

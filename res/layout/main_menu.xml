@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/left_drawer_item_bg_normal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/sky"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:text="加载中..."
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_photo"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:text="班级"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <!-- 身份TextView -->
+
+            <TextView
+                android:id="@+id/user_authority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:paddingTop="2dip"
+                android:text="用户身份"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <!-- 
+        <com.pocketuniversity.view.RoundImageView
+            android:id="@+id/user_photo"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_above="@+id/user_name"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dip"
+            android:layout_marginLeft="61dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo01" />
+ -->
+ <com.pocketuniversity.view.RoundImageView
+            android:id="@+id/user_photo"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo01" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/menu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:childDivider="@drawable/list_divider"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/btnLayout_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/clear_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_red"
+            android:text="清空缓存"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/quitLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_red"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

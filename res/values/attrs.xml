@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PlayBtn">
+        <attr name="left" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircularProgress">
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="RefreshView">
+        <attr name="type" format="enum">
+            <enum name="sun" value="0" />
+            <enum name="jet" value="1" />
+        </attr>
+    </declare-styleable>
+    
+    
+        <declare-styleable name="WaterDropView">
+        <attr name="max_circle_radius" format="dimension"/>
+        <attr name="min_circle_radius" format="dimension"/>
+        <attr name="waterdrop_color" format="color"/>
+        <attr name="topcircle_x" format="dimension"/>
+        <attr name="topcircle_y" format="dimension"/>
+        <attr name="bottomcircle_x" format="dimension"/>
+        <attr name="bottomcircle_y" format="dimension"/>
+    </declare-styleable>
+
+        <declare-styleable name="FlipViewController">
+		<attr name="orientation" format="enum">
+			<enum name="vertical" value="0"/>
+			<enum name="horizontal" value="1"/>
+		</attr>
+
+		<attr name="animationBitmapFormat" format="enum">
+			<enum name="ARGB_8888" value="0"/>
+			<enum name="ARGB_4444" value="1"/>
+			<enum name="RGB_565" value="2"/>
+		</attr>
+	</declare-styleable>
+</resources>

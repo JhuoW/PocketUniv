@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更多"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:background="#ffffff"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ebebeb" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="4dip"
+                    android:text="实用功能"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_kuaidi"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="快递查询" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/devide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/main_bottom"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_PC"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="体坛资讯" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/main_bottom"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_weather"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="实时天气" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/main_bottom"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_history"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="历史上的今天" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_car"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="公交路线查询" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Notice"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="提醒事项" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spadier" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Friend"
+                style="@style/left_drawer_item_layout" >
+
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/more_laiwang"
+                    android:text="推荐好友" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spadier" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

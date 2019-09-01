@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@color/activity_graybg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp" 
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        >
+         
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:background="@drawable/bing_input_edt"
+            android:layout_weight="1"
+             >
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toLeftOf="@+id/search_line"
+                android:background="@drawable/transparent_edittext_bg"
+                android:hint="请输入单号"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="@color/black_text_color"
+                android:textColorHint="@color/gray_text_color"
+                android:textSize="@dimen/text_mid_size" />
+
+            <View
+                android:id="@+id/search_line"
+                android:layout_width="@dimen/yipx"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/search_btn"
+                android:background="@color/activity_graybg" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search_btn_bg"
+                android:gravity="center"
+                android:onClick="onSearchClick"
+                android:paddingBottom="0dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="0dp"
+                android:contentDescription="@null"
+                 />
+        </RelativeLayout>
+        
+        
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="@dimen/centerLvItemIvWidthHeight"
+            android:layout_height="@dimen/centerLvItemIvWidthHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_error" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ivRight"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="顺丰快递"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvTitle"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/ivRight" >
+
+            <ImageView
+                android:id="@+id/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_plugin_contacts" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/dd"
+                android:text="8888888"
+                android:textColor="@color/gray_font" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ll_phone"
+            android:layout_below="@id/ll_phone"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/ivRight" >
+
+            <ImageView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_report_remark" />
+
+            <TextView
+                android:id="@+id/tv_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/tt"
+                android:text="www.baidu.com"
+                android:textColor="@color/gray_font" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:id="@+id/group_tiao"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="55dp"
+            android:background="@color/time_line_bg" />
+
+
+        <ExpandableListView
+            android:id="@+id/expandlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

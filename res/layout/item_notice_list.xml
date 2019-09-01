@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 资讯界面Item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_navigation_func"
+    android:paddingBottom="@dimen/centerLvItemHeightPB"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/begin_time"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:text="dd"
+        android:textColor="@color/colume"
+        android:textSize="18sp" />
+
+    <!-- 80 -->
+
+
+    <!-- 52dip 60dip -->
+
+    <ImageView
+        android:id="@+id/begin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_syllabus_teacher" />
+
+    <TextView
+        android:id="@+id/tvExcept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/begin_time"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="发布人："
+        android:textColor="#7D7D7D"
+        android:textSize="14sp" />
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kkkkkkkkk"
+        android:layout_toRightOf="@id/tvExcept"
+        android:layout_alignBottom="@id/tvExcept"
+        android:id="@+id/source"
+        android:textColor="#7D7D7D"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dip"/>
+
+    <ImageView
+        android:id="@+id/begin_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/begin_time"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_plugin_lost" />
+
+    <TextView
+        android:id="@+id/tvplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvExcept"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/begin_place"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_alignLeft="@id/tvExcept"
+        android:text="点击量 ："
+        android:textColor="#7D7D7D"
+        android:textSize="14sp" />
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000000"
+        android:id="@+id/viewCount"
+        android:textColor="#7D7D7D"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/tvplace"
+        android:layout_alignBottom="@id/tvplace"
+        android:layout_alignLeft="@id/source"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dip"
+            android:text="是否收藏:"
+            android:textColor="#555555"
+            android:textSize="10sp"
+            android:layout_below="@id/tvplace" 
+            android:layout_alignLeft="@id/tvplace"
+            android:layout_marginTop="8dip"
+            android:layout_margin="10dip"
+            android:id="@+id/shoucang"/>
+
+        <TextView
+            android:id="@+id/tvCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="100dip"
+            android:layout_toRightOf="@id/shoucang"
+            android:layout_alignBottom="@id/shoucang"
+            android:layout_marginLeft="5dip"
+            android:text="xxxxx"
+            android:textColor="#555555"
+            android:textSize="10sp" />
+        
+
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-08-19"
+            android:textColor="#555555"
+            android:textSize="10sp"
+            android:layout_alignBottom="@id/tvCollection"
+            android:layout_marginRight="20dip"
+            android:layout_alignParentRight="true"
+             />
+
+</RelativeLayout>

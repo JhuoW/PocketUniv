@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_shape"
+        android:hint="群号"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColorHint="#b3b3b3"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/searchGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="3dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/group_icon" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/avatar"
+            android:text="群名称"
+            android:textColor="#0F0F0F"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="#b1aeab" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="热门群组"
+            android:textColor="#47494c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:src="#eae7e5" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hotGroup_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never" >
+
+    </ListView>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换一批"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:id="@+id/changeGroup"/>
+
+</LinearLayout>

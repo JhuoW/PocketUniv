@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_header_layout" />
+
+    <EditText
+        android:id="@+id/blogaddcomment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="分享您的那点新鲜事儿..."
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip"
+        android:textColor="#444444"
+        android:textColorHint="#aaaaaa"
+        android:textSize="16sp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="right"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/blogaddcomment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#80333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="/140"
+            android:textColor="#80333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <GridView 
+        android:id="@+id/noScrollgridview"
+        android:layout_width="290dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+    
+
+</LinearLayout>
